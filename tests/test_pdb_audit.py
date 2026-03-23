@@ -12,3 +12,4 @@ class TestPdbAudit(unittest.TestCase):
         self.assertTrue(pdb_audit.is_blocking_pdb("100%", None, 2))
         self.assertTrue(pdb_audit.is_blocking_pdb(None, 0, 2))
         self.assertFalse(pdb_audit.is_blocking_pdb(2, None, 3))
+        self.assertFalse(pdb_audit.is_blocking_pdb(1, None, 1))
